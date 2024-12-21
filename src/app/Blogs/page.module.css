@@ -1,0 +1,58 @@
+.MainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 37px;
+    margin-bottom: 50px;
+    min-height: 100vh; /* Ensures the div takes the full viewport height */
+    box-sizing: border-box;
+}
+
+.SecondaryDiv {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+.SecondaryDiv:hover {
+    transform: translateY(-5px); /* Move the card up slightly */
+    box-shadow: 0 5px 16px rgb(59 185 51 / 80%); /* Increase shadow on hover */
+}
+
+.ImgDiv {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.HeadingThree {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.Desc {
+    font-size: 14px;
+    color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+    .MainDiv {
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .MainDiv {
+        flex-direction: column; 
+        align-items: center;  
+    }
+
+    .SecondaryDiv {
+        width: 85%;
+        margin: 25px; 
+    }
+}

@@ -1,0 +1,168 @@
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   
+   
+   .image{
+     height: 100px;
+     width: 80px;
+     margin-top: 80px;
+   }
+    .Header{
+     display: flex;
+     background-color: rgb(4 78 131);;
+     color:  rgb(185, 216, 243);;
+     justify-content: space-around;
+     height: 80px;
+     width: 100vw;
+     align-items: center;
+     
+    }
+
+     
+    .Header-Buttons{
+     font-size: 18px;
+     color: #fff;
+     display: flex;
+     justify-content: right;
+     gap: 2rem;
+    }
+    .Header-Buttons{
+      color : #fff;
+    }
+    
+    li{
+      position: relative;
+      display: inline-block;
+    }
+    .link {
+      position: relative;
+      text-decoration: none; 
+      padding-bottom: 5px;
+      color: #fff;
+      transition: color 0.3s ease; /* Smooth transition / color change */
+    }
+    
+    .link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: #29a919;
+      transition: width 0.4s ease-in-out; /* Smooth transition*/
+    }
+    
+    .link:hover::after {
+      width: 100%;  
+    }
+    
+    .Para{
+     gap: 3rem;
+     font-size: 1.5rem;
+     font-weight: Bold;
+     
+    }
+    .aboutheading{
+     margin: 80px 0px 0px 50px;
+     font-weight: 900;
+     color: red;
+   
+    }
+    .Footer{
+     bottom: 0;
+     margin-top: 55px;
+     background-color: #333;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+     position: relative;
+      width: 100%;
+    }
+   
+    
+        
+    .Footer .Links a {
+      color: #1abc9c;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .Footer .Links a:hover {
+      text-decoration: underline;
+    }
+
+    .ParentC{
+      text-align: center;
+      font-size: larger;
+      font-weight: 900;
+      margin-top: 200px;
+      height: 100vh;
+      width: 100vw;
+
+     }
+     
+   
+      
+    /* For tablets and devices with width up to 768px */
+   @media only screen and (max-width: 768px) {
+      
+     .Header {
+       width: 100%;
+       height: 55px;
+       font-size: 15px;
+   
+     }
+     .Header-Buttons {
+       font-size: 10px;
+       margin-right: 10px;
+     }
+     .image{
+      height: 65px;
+      width: 50px;
+      margin-top: 53px;
+     }
+     .Para{
+       gap: 15px;
+       font-size: 17px;
+       font-weight: Bold;
+   }
+   .Footer{
+     
+     .Footer {
+      margin-top: 30px;
+    }
+   }
+
+   /* blog page ..styles */
+   .bdiv{
+    padding: 10px;
+   }
+   }
+   
+   /* For mobile phones (width of 480px or less) */
+   @media only screen and (max-width: 480px) {
+     
+     .Header {
+       width: 100%;
+       height: 45px;
+       font-size: 8px;
+     }
+     .Header-Buttons {
+       font-size: 8px;
+     }
+     .image{
+       height: 40px;
+       width: 35px;
+       margin-top: 40px;
+     }
+     .Para{
+      font-size: 12px;
+      font-weight: Bold;
+  }
+     .Footer {
+      margin-top: 20px;
+    }
+  }
+   
+   
